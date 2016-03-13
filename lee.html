@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="test/html;charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="lib/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="lib/index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+	<script type="text/javascript" src='lib/jquery.min.js'></script>
+	<script type="text/javascript" src='lib/loading.js'></script>
+	<script type="text/javascript" src='lib/jquery.fullPage.min.js'></script>
+	<script type="text/javascript" src='lib/jquery.cookie.js'></script>
+	<script type="text/javascript" src='lib/baseAjax.js'></script>
+	<script type="text/javascript" src='lib/mine.js'></script>
+
+</head>
+<body>
+	<div id="loading" class="pc_none">
+		<div id="loadingText">玩命加载中~</div>
+		<div id="loadingBox">
+			<div id="loadingBar"></div>
+		</div>
+	</div>
+	<div id="signing" class="phone_none">
+		玩命加载中~
+	</div>
+	<div id="shadowDiv"></div>
+	<div id="myAlert">
+		<div id="cancel"></div>
+		<div id="content">
+			<div>
+				<img src="img/id.png">
+				<input type="text" id="username" name="username" placeholder='请输入学号(8位)'>
+			</div>
+			<div>
+				<img src="img/password.png">
+				<input type="password" id="password" placeholder='请输入您的密码'>
+			</div>
+		</div>
+		<div id="checkbox">
+			<input type="checkbox" id="loginkeep">
+			<label id="checktext">记住密码</label>
+		</div>
+		<div id="Button">登录</div>
+	</div>
+	<div id="container">
+		<div class="section fir">
+			<div class="home pc_none"></div>
+			<div id="vedio">
+				<video src='img/preview.mp4' class='mp4'  controls="controls" ></video>  		
+			</div>
+			<div id="join"><img src="img/join.png"></div>
+			<div id="pc_headText">Copyright © 2016 西邮移动应用开发实验室 All rights reserved.</div>
+		</div>
+		<div class="section sec sec_pc">
+			<div class="home"></div>
+			<div class="sec_logo"><img src="img/logo1.png"></div>
+			<div class="sec_text">
+				<div class="logo"><img src="img/who.png"></div>
+				<div class="text">
+					<p class="p_a">西邮移动应用开发实验室</p>
+					<p class="p_b">亦称 西邮3G手机应用开发实验室</p>
+					<p class="p_c">西邮IT应用型人才实训中心</p>
+					<p class="p_d">Google-Android 人才培养示范基地</p>
+					<p class="p_e">Google-Android 认证课程</p>
+					<p class="p_f">专注于三大移动平台的应用开发</p>
+				</div>
+				<div class="pc_text">
+					<p>以服务在校学生 丰富在校学生移动应用为目标 自行设计和开发了多款手机客户端软件</p>
+					<p>实验室以自主学习与共同交流并行的自发式学习方式为主 培养成员的学习兴趣及自主学习能力</p>
+					<p>努力为每位成员创造最佳的学习环境和学习氛围 为打造一批移动应用开发能手而不断努力！</p>
+					<p>实验室内部设有众多移动应用开发设备 包括若干台iMac一体机 Mac Mini以及PC</p>
+					<p>各小组还配备有相关的测试设备,包括iPhone iPad HTC Android WindowsPhone 手机可供测试</p>
+				</div>
+			</div>
+		</div>
+		<div class="section sec third_pc">
+			<div class="home"></div>
+			<div class="sec_logo"><img src="img/logo2.png"></div>
+			<div class="sec_text">
+				<div class="logo"><img src="img/what.png"></div>
+				<div class="text">
+					<p class="p_a">《iOS平台流媒体播放器》</p>
+					<p class="p_b">《Android平台酷步软件》</p>
+					<p class="p_c">《西邮图书查询借阅系统WP客户端》</p>
+					<p class="p_d">手机版网站《西邮图书馆》《高校成绩》</p>
+					<p class="p_e">《移动端模拟电脑触控板》</p>
+					<p class="p_f">校园综合网站《MyCollege》</p>
+				</div>
+				<div class="pc_text">
+					<p>iOS开发组能利用iOS平台的种种优势 开发出精致而优秀的移动应用 并能针对不同设备进行优化</p>
+					<p>Windows Phone开发组专注于Microsoft公司的Windows 8及Windows Phone 7/7.5/8平台的移动应用开发</p>
+					<p>Andriod开发组进行了各种各样的移动应用开发，是实验室中成果最多、规模最大的开发组</p>
+					<p>Web开发小组致力于以HTML/HTML5、CSS/CSS3、Less、Javascript、jQuery、Ajax为主的Web前端开发，和以Node.js、PHP、JSP、ASP.NET为主的后台开发</p>
+				</div>
+			</div>
+		</div>
+		<div class="section fourth">
+		<div class="home"></div>
+			<div class="hot pc_none"><img src="img/hot.png"></div>
+			<div class="pc_none groupBox">
+				<div class="group_logo" id="box_Web"><img src="img/web.png" id="web"></div>
+				<div class="group_logo" id="box_Andriod"><img src="img/android.png" id="android"></div>
+				<div class="group_logo" id="box_Windows"><img src="img/windows.png" id="windows"></div>
+				<div class="group_logo" id="box_Ios"><img src="img/ios.png" id="ios"></div>				
+			</div>
+			<div class='phone_none groupBox'>
+				<div class="group_logo" id="box_Andriod">
+					<div class="onName" id="onName_android">Android</div>
+					<img src="img/android_pc.png" id="android">
+				</div>
+				<div class="group_logo" id="box_Ios">
+					<div class="onName" id="onName_ios">ios</div>
+					<img src="img/ios_pc.png" id="ios">
+				</div>
+				<div class="group_logo" id="box_Windows">
+					<div class="onName" id="onName_windows">Windows</div>
+					<img src="img/windows_pc.png" id="windows">
+				</div>
+				<div class="group_logo" id="box_Web">
+					<div class="onName" id="onName_web">Web</div>
+					<img src="img/web_pc.png" id="web">
+				</div>	
+			</div>
+		</div>
+		<div class="section group">
+			<div class="home"></div>
+			<div class="group_name">
+				<p class="groupName">Android</p>
+				<div class="group_line"></div>
+				<p class="leaderName">现任组长-田召</p>
+			</div>
+			<div class="group_text">
+				<div class="mainText">利用Android系统的开放性,Andriod开发组进行了各种各样的移动应用开发,是实验室中成果最多,规模最大的开发组.Android开发组多次参加多种大赛,并获得了不错的成绩!应用《酷步》,曾参加全国级大赛并获奖,《西邮图书借阅系统》率先发布,《iXiyou》整合了多种与西邮校园相关的功能,方便了西邮学生.Android开发组已走出了多位优秀的学长,学姐,并就职于国内知名企业!</div>
+				<div class="overText">这里是结束语</div>
+			</div>
+			<div class="group_button">
+				投递简历
+			</div>
+			<div class="back">
+				<div>Back<img src="img/back.png"></div>
+			</div>
+		</div>
+		<div class="section group">
+			<div class="home"></div>
+			<div class="group_name">
+				<p class="groupName">Web</p>
+				<div class="group_line"></div>
+				<p class="leaderName">现任组长-张腾飞</p>
+			</div>
+			<div class="group_text">
+				<div class="mainText">Web开发小组现有成员6人.致力于以HTML/HTML5,CSS/CSS3,Less,Javascript,jQuery,Ajax为主的Web前端开发,和以PHP,Node.js,JSP,ASP.NET为主的后台开发.如今以上线项目有手机版网站《西邮图书馆》,《高校成绩》,校园综合网站《MyCollege》(包含有易校园(校园二手市场),论坛,资料库,订餐吧,PC浏览器版成绩单和图书查询,学生会,实验室等模块)正在进行中.</div>
+				<div class="overText">更多精彩项目等待你的参与！</div>
+			</div>
+			<div class="group_button">
+				投递简历
+			</div>
+			<div class="back">
+				<div>Back<img src="img/back.png"></div>
+			</div>			
+		</div>
+		<div class="section group">
+			<div class="home"></div>
+			<div class="group_name">
+				<p class="groupName">iOS</p>
+				<div class="group_line"></div>
+				<p class="leaderName">现任组长-王建刚</p>
+			</div>
+			<div class="group_text">
+				<div class="mainText">iOS开发组现有成员8人,来自计科,软件专业.iOS开发组能利用iOS平台的种种优势,开发出精致而优秀的移动应用,并能针对不同设备进行优化.iOS开发组精心设计的《iXiyou》项目,整合了多种与西邮校园生活息息相关的功能,包括相关官方微博内容的抓取,学生图书查询借阅等等,并在不断完善,优化,现已获得新浪微博认证并正式上线.iOS开发组还开发了多款针对不同设备的应用和小游戏.</div>
+				<div class="overText">这里是结束语</div>
+			</div>
+			<div class="group_button">
+				投递简历
+			</div>
+			<div class="back">
+				<div>Back<img src="img/back.png"></div>
+			</div>			
+		</div>
+		<div class="section group">
+			<div class="home"></div>
+			<div class="group_name">
+				<p class="groupName">Windows</p>
+				<div class="group_line"></div>
+				<p class="leaderName">现任组长-康立博</p>
+			</div>
+			<div class="group_text">
+				<div class="mainText">现有来自计科,软件专业12,13级的同学共计15人.专注于微软公司Windows 8.1及Windows Phone 7/7.5/8平台的移动应用开发,并能带给用户独特的体验.《西邮图书查询借阅系统WP客户端》《通讯中心》《通讯中心-极速版》皆已在Windows Phone Store上线,并拥有良好的口碑和可观的下载量.小组还开发了实验室的签到系统(服务器端,客户端).</div>
+				<div class="overText">这里是结束语</div>
+			</div>
+			<div class="group_button">
+				投递简历
+			</div>
+			<div class="back">
+				<div>Back<img src="img/back.png"></div>
+			</div>			
+		</div>
+	</div>
+</body>
+</html>

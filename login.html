@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="lib/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="lib/login.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+	<script type="text/javascript" src='lib/rAF.js'></script>
+	<script type="text/javascript" src='lib/Three.js'></script>
+	<script type="text/javascript" src='lib/jquery.min.js'></script>
+	<script type="text/javascript" src='lib/jquery.fullPage.min.js'></script>
+	<script type="text/javascript" src='lib/baseAjax.js'></script>
+	<script type="text/javascript" src='lib/login.js'></script>
+	<style type="text/css">
+
+	</style>	
+</head>
+<body>
+<div id="container">
+	<div class="section self">
+		<div class="home"></div>
+		<div id="outLogin">退出登录</div>
+		<div class="bigText">
+			<div class="allTitle" id="sche">通知</div>
+			<div id="scheMain"></div>
+		</div>
+		<a href="php_Api/down.php">
+			<div id="down">
+				<div id="getText_a">通知</div>
+				<div id="getText_b">笔试题目下载</div>
+				<div id="downPic"></div>
+			</div>
+		</a>
+		<div class="offer"></div>
+	</div>
+	<div class="section form">
+		<div id="first">
+			<div id="submit">投简历</div>
+			<div class="home"></div>
+			<div class="allTitle formTitle">学号</div>
+			<input type="text" id="form_number" class="formInput" readonly="readonly">
+			<div class="allTitle formTitle">姓名</div>
+			<input type="text" id="form_name" class="formInput" readonly="readonly">
+			<div class="allTitle formTitle">邮箱</div>
+			<input type="text" id="form_class" class="formInput">
+			<div class='allTitle formTitle'>电话</div>
+			<input type="text" id="form_phone" class='formInput'>
+			<div class="allTitle formTitle">方向</div>
+			<select id="form_direction" class="formInput">
+				<option value="Android">Android</option>
+				<option value="Web">Web</option>
+				<option value="ios">ios</option>
+			</select>
+			<div class="allTitle formTitle">自述</div>
+			<textarea id="form_self" class="formInput"></textarea>			
+		</div>
+		<div id="second">
+			<div id="plane"></div>
+			<div id="cloud"></div>
+		</div>
+	</div>
+	<div class="section success" >
+		<div class="home"></div>
+		<div id="mobile_cube"></div>
+		<div class="point" id="leftPoint" class="pc_none"></div>
+		<div class="point" id="rightPoint" class="pc_none"></div>
+		<div id="successText" class="pc_none">
+			<p id="succTitle">简历投递成功!</p>
+			<p class="succMain"><span>XUPT_</span></p>
+			<p class="succMain">
+			   <span>M</span>obile
+			   <span>A</span>pplication
+			   <span>L</span>ab
+			</p>
+			<p id="succFoot" display='none'>我们会将最新信息发送至您邮箱或者可以关注本网站查询</p>
+		</div>
+		<div id="back">
+			<span>返回首页</span>
+			<img src="img/back.png" class="pc_none">
+			<img src="img/3point.png" class="phone_none">
+		</div>
+		<div id="pc_headText" class="phone_none">Copyright © 2016 西邮移动应用开发实验室 All rights reserved.</div>
+	</div>
+</div>
+</body>
+</html>
